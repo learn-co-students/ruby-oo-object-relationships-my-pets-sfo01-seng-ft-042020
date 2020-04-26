@@ -19,12 +19,8 @@ class Owner
   def sell_pets
     self.pets.each do |pet|
       pet.mood = "nervous"
-    end
-
-    self.pets.each do |pet|
       pet.owner = nil
     end
-
   end
 
   def feed_cats
